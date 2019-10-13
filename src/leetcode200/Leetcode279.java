@@ -9,20 +9,20 @@ public class Leetcode279 {
 
 }
 
-class Solution {
-	public int numSquares(int n) {
-		if(n==0)	return 0;
-		int[] dp=new int[n+1];
-		Arrays.fill(dp, Integer.MAX_VALUE);
-		dp[0]=0;dp[1]=1;
-		
-		int root=1;
-		for(int i=2;i<=n;i++)
-			for(root=1;root*root<=i;root++)
-				dp[i]=dp[i-root*root]+1<dp[i]?dp[i-root*root]+1:dp[i];
-		return dp[n];
-	}
-}
+//class Solution {
+//	public int numSquares(int n) {
+//		if(n==0)	return 0;
+//		int[] dp=new int[n+1];
+//		Arrays.fill(dp, Integer.MAX_VALUE);
+//		dp[0]=0;dp[1]=1;
+//		
+//		int root=1;
+//		for(int i=2;i<=n;i++)
+//			for(root=1;root*root<=i;root++)
+//				dp[i]=dp[i-root*root]+1<dp[i]?dp[i-root*root]+1:dp[i];
+//		return dp[n];
+//	}
+//}
 
 //class Solution {
 //    public int numSquares(int n) {
