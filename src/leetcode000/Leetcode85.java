@@ -1,23 +1,41 @@
 package leetcode000;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Leetcode85 {
 
 	public static void main(String[] args) {
-		Solution s=new Solution();
+//		Solution s=new Solution();
 		int[][] matrix= {
 				{0,0,0,1,0,0,0},
 				{0,0,1,1,1,0,0},
 				{0,1,1,1,1,1,0}
 		};
+		
+		List<List<String>> strs=new ArrayList<>();
+		List<String> str1=new ArrayList<String>();
+		List<String> str2=new ArrayList<String>();
+		
+		str1.add("aaa");
+		str1.add("bbb");
+		str2.add("ccc");
+		str2.add("ddd");
+		strs.add(str1);
+		strs.add(str2);
+		
+		for(List<String> str: strs) {
+			for(String s: str) {
+				System.out.println(s);
+			}
+		}
+		
 //		int[][] matrix= {
 //				{1,0,1,0,1},
 //				{1,0,1,1,1},
 //				{1,1,1,1,1},
 //				{1,0,0,1,0}
 //		};
-		System.out.println(s.maximalRectangle(matrix));
+//		System.out.println(s.maximalRectangle(matrix));
 	}
 
 }
