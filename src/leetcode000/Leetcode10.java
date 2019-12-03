@@ -3,14 +3,13 @@ package leetcode000;
 public class Leetcode10 {
 
 	public static void main(String[] args) {
-		Solution s=new Solution();
+//		Solution s=new Solution();
 //		String str="mississippi";
 //		String p="mis*is*p*.";
 		String str="ab";
 		String p=".*";
 		
-		System.out.println(s.isMatch(str, p));
-		
+//		System.out.println(s.isMatch(str, p));
 	}
 
 }

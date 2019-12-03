@@ -4,7 +4,6 @@ public class Leetcode328 {
 
 	public static void main(String[] args) {
 		Solution s= new Solution();
-		ListNode
 	}
 
 }
